@@ -2,10 +2,9 @@
     <div id="app">
         <el-container>
             <el-header class="em-header">
-                <el-row>
+                <el-row class="em-header-row">
                     <el-col v-bind:span="2">
                         <div class="em-logo">
-                            <h2>仪表盘</h2>
                         </div>
                     </el-col>
                 </el-row>
@@ -46,7 +45,9 @@ export default {
 }
 
 .em-logo {
-    color: #fff;
+    height: 100%;
+    background: #50d2d2;
+    border-radius: .5rem;
 }
 
 .em-logo > h2 {
@@ -58,6 +59,15 @@ export default {
 
 #id {
   height: 100%;
+}
+
+.em-header-row {
+    height: 100%;
+    padding: .5rem;
+}
+
+.el-col {
+    height: 100%;
 }
 </style>
 
