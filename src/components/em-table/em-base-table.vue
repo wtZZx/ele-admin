@@ -120,7 +120,7 @@ export default {
     },
     methods: {
         query() {
-            $server.queryList({ manageUnit: "eh" }, "2015-01-01", "2018-03-02", "asc", 0, 10).then(res => {
+            $server.queryList().then(res => {
                 console.log(res)
             })
         },

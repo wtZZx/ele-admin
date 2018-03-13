@@ -22,17 +22,14 @@ $service.bindService = function (service, method) {
     }
 }
 
-$service.getMockData = function (sid, mtd) {
+$service.getMockData = function (url) {
     return function() {
         const data = Array.from(arguments)
         return $service.request({
-            url: '*.jsonRequest',
+            url: url,
             data: {
-                sid: sid,
-                mtd: mtd,
                 data: data
-            },
-            method: 'post'
+            }
         })
     }
 }

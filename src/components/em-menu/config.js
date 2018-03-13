@@ -39,7 +39,7 @@ const menus = [
         icon: 'ion-map',
         subs: [
             {
-                name: '百度地图',
+                name: '高德地图',
                 key: '0301',
                 link: '/map'
             }
