@@ -27,6 +27,14 @@ a {
     color: $parimy-color;
 }
 
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0
+}
+
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;

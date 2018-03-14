@@ -1,6 +1,5 @@
 <template>
     <div class="em-login-page">
-        <canvas></canvas>
         <div class="em-login-panel">
             <div class="em-login-header">
                 <h1>LOGIN</h1>
@@ -22,7 +21,6 @@
 
 <script>
 import $server from '@/api/login.js'
-import ctbg from './makebg'
 
 export default {
     name: 'emLogin',
@@ -40,7 +38,6 @@ export default {
         // $server.logon().then(res => {
         //     console.log(res)
         // })
-        ctbg('canvas')
     }
 }
 </script>

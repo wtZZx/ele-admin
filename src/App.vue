@@ -17,7 +17,7 @@
 
                 <el-container class="em-el-container">
                     <el-main class="em-box em-box-primary">
-                        <router-view/>
+                        <transition name="fade"><router-view/></transition>
                     </el-main>
 
                     <el-footer height="50px"></el-footer>
