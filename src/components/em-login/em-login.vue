@@ -19,7 +19,7 @@
                     </el-form-item>
 
                     <el-form-item>
-                        <el-button type="primary" class="em-login-btn">Log in</el-button>
+                        <el-button type="primary" class="em-login-btn" @click="logon">Log in</el-button>
                     </el-form-item>
 
                 </el-form>
@@ -47,6 +47,15 @@ export default {
         // $server.logon().then(res => {
         //     console.log(res)
         // })
+    },
+    methods: {
+        logon() {
+            console.log('login')
+            // 如果成功登录，路由跳转到首页
+            this.$router.push({
+                path: 'dashboard'
+            })
+        }
     }
 }
 </script>

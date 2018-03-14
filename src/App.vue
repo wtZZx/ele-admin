@@ -16,7 +16,7 @@
                 </el-header>
 
                 <el-container class="em-el-container">
-                    <el-main class="em-box em-box-primary">
+                    <el-main>
                         <transition name="fade"><router-view/></transition>
                     </el-main>
 

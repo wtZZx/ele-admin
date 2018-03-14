@@ -1,10 +1,13 @@
 <template>
     <div>
         <el-menu :unique-opened="true" class="em-el-menu">
-            <el-menu-item index="2">
-                <i class="ion-ios-speedometer em-menu-icon"></i>
-                <span slot="title">控制台</span>
-            </el-menu-item>
+            <router-link to="/">
+                <el-menu-item index="2">
+                    <i class="ion-ios-speedometer em-menu-icon"></i>
+                    <span slot="title">控制台</span>
+                </el-menu-item>
+            </router-link>
+            
             <el-submenu v-for="menu in menus" :key="menu.key" :index="menu.key">
                 <template slot="title">
                     <i :class="menu.icon" class="em-icon-color em-menu-icon"></i>

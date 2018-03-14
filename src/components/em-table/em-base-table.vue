@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="em-box em-box-primary">
         <div class="em-box-header">
             <el-breadcrumb separator-class="el-icon-arrow-right">
                 <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
