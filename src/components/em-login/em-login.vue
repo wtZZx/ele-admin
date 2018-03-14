@@ -7,12 +7,21 @@
             <div class="em-login-content">
                 <el-form :model="login">
                     <el-form-item>
-                        <el-input placeholder="name" v-model="login.loginName"></el-input>
+                        <el-input placeholder="name" v-model="login.loginName" size="large">
+                            <i slot="prefix" class="ion-person"></i>
+                        </el-input>
                     </el-form-item>
 
                     <el-form-item>
-                        <el-input placeholder="password" v-model="login.password" v-on:keyup.enter.native="logon"></el-input>
+                        <el-input placeholder="password" v-model="login.password" size="large">
+                            <i slot="prefix" class="ion-locked"></i>
+                        </el-input>
                     </el-form-item>
+
+                    <el-form-item>
+                        <el-button type="primary" class="em-login-btn">Log in</el-button>
+                    </el-form-item>
+
                 </el-form>
             </div> 
         </div>
@@ -44,13 +53,9 @@ export default {
 
 <style lang="scss" scoped>
 .em-login-panel {
-    width: 760px;
-    margin: 1rem auto;
+    width: 360px;
+    margin: 10% auto;
     z-index: 9999;
-    width: 10rem;
-    height: 10rem;
-    position: absolute;
-    left: 50%;
 }
 .em-login-header {
     display: block;
@@ -59,10 +64,14 @@ export default {
     text-align: center;
     font-weight: 700;
     font-size: 1.3em;
-    color: #ccc;
+    color: #5E60EB;
 }
 
 .em-login-content {
     margin: 10px;
+}
+
+.em-login-btn {
+    width: 100%;
 }
 </style>
