@@ -31,7 +31,7 @@ a {
     transition: opacity .5s
 }
 
-.fade-enter, .fade-leave-to {
+.fade-enter, .fade-leWave-to {
     opacity: 0
 }
 
@@ -80,6 +80,7 @@ a {
 .em-header {
     // background: $parimy-color;
     background: #fff;
+    padding: 0;
 }
 
 .em-login-page {
@@ -118,4 +119,15 @@ a {
     &.with-border {
         border-bottom: 1px dashed #C9C9C9;
     }
+}
+
+.em-aside-collspse {
+    width: 54px !important;
+    overflow: inherit;
+    transition: all .5s;
+}
+
+.em-content-collspan {
+    margin-left: 54px !important;
+    transition: all .5s;
 }

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <el-menu :unique-opened="true" class="em-el-menu">
+        <el-menu :unique-opened="true" class="em-el-menu" :collapse="isCollapse" v-bind:class="{ 'em-el-collaspen': isCollapse }">
             <router-link to="/">
-                <el-menu-item index="2">
+                <el-menu-item index="0">
                     <i class="ion-ios-speedometer em-menu-icon"></i>
                     <span slot="title">控制台</span>
                 </el-menu-item>
@@ -37,6 +37,16 @@ export default {
         return {
             menus: menu
         }
+    },
+    props: {
+        isCollapse: Boolean
+    },
+    methods: {
+    },
+    watch: {
+        isCollapse(nv, ov) {
+            console.log(nv, ov, this)
+        }
     }
 }
 </script>
@@ -52,5 +62,10 @@ export default {
 
 .em-el-menu {
     border-right: none;
+}
+
+.em-el-collaspen {
+    width: 54px !important;
+    transition: all .5s;
 }
 </style>
