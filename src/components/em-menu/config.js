@@ -1,5 +1,22 @@
 const menus = [
     {
+        name: '控制台',
+        icon: 'ion-ios-speedometer',
+        key: '00',
+        subs: [
+            {
+                name: '控制台',
+                key: '0001',
+                link: '/'
+            },
+            {
+                name: '工作台',
+                key: '0002',
+                link: '/workspace'
+            }
+        ]
+    },
+    {
         name: '列表',
         icon: 'ion-social-buffer',
         key: '01',

@@ -77,7 +77,6 @@ export default {
 
 .em-header-row {
     height: 100%;
-    padding: .5rem;
 }
 
 .el-col {
