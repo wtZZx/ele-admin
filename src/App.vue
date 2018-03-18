@@ -22,7 +22,7 @@
 
                 <el-container class="em-el-container">
                     <el-main>
-                        <transition name="fade"><router-view/></transition>
+                        <router-view/>
                     </el-main>
 
                     <el-footer height="50px"></el-footer>
@@ -94,6 +94,17 @@ export default {
 
 .content-wrap {
     margin-left: 215px;
+}
+
+.sidebar-toggle {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 22px;
+    cursor: pointer;
+
+    & > i {
+        font-size: 18px;
+    }
 }
 </style>
 

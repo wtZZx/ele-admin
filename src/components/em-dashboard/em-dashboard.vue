@@ -8,17 +8,17 @@
             </el-col>
             <el-col :span="6" class="card-wrap">
                 <el-card>
+                    <h3>NEW PATIENT</h3>
+                </el-card>
+            </el-col>
+            <el-col :span="6" class="card-wrap">
+                <el-card>
                     <h3>NEW PROJECT</h3>
                 </el-card>
             </el-col>
             <el-col :span="6" class="card-wrap">
                 <el-card>
-                    <h3>NEW USER</h3>
-                </el-card>
-            </el-col>
-            <el-col :span="6" class="card-wrap">
-                <el-card>
-                    <h3>NEW USER</h3>
+                    <h3>NEW WORK</h3>
                 </el-card>
             </el-col>
         </el-row>

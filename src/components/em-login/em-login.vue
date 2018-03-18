@@ -5,7 +5,7 @@
                 <h1>LOGIN</h1>
             </div>
             <div class="em-login-content">
-                <el-form :model="login">
+                <el-form>
                     <el-form-item>
                         <el-input placeholder="name" v-model="login.loginName" size="large">
                             <i slot="prefix" class="ion-person"></i>
@@ -21,8 +21,11 @@
                     <el-form-item>
                         <el-button type="primary" class="em-login-btn" @click="logon">Log in</el-button>
                     </el-form-item>
-
                 </el-form>
+                    
+                
+
+                
             </div> 
         </div>
     </div>
