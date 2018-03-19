@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: "HelloWorld",
+    name: "emProfile",
     data() {
         return {
             msg: "Great"

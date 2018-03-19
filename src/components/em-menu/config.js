@@ -12,7 +12,7 @@ const menus = [
             {
                 name: '工作台',
                 key: '0002',
-                link: '/workspace'
+                link: '/worksplace'
             }
         ]
     },

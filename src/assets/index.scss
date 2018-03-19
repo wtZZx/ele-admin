@@ -92,6 +92,7 @@ a {
     height: 100%;
     color: #fff;
     background: #fff;
+    z-index: 999999;
 }
 
 .em-box {
@@ -107,10 +108,18 @@ a {
     padding: $box-padding-default-top-bottom 0;
 }
 
+.em-box-body {
+    padding: 0 $box-padding-default-left-right;
+}
+
 .em-box-header {
     color: #444;
     padding: $box-padding-default-top-bottom $box-padding-default-left-right 5px $box-padding-default-left-right;
     border: none;
+}
+
+.em-breadcrumb-wrap {
+    padding: 10px 30px 10px 10px;
 }
 
 .em-box-controls {

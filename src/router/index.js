@@ -1,12 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
+import emProfile from '@/components/em-profile/em-profile.vue'
 import emDashBoard from '@/components/em-dashboard/em-dashboard.vue'
 import emBaseTable from '@/components/em-table/em-base-table.vue'
 import emLogin from '@/components/em-login/em-login.vue'
 import emBaseTabTable from '@/components/em-table/em-base-tab-table.vue'
 
 import emBaseFrom from '@/components/em-form/em-base-form.vue'
+import emWorksplace from '@/components/em-worksplace/em-worksplace.vue'
+
+import emMap from '@/components/em-map/em-map.vue'
 
 Vue.use(Router)
 
@@ -17,6 +20,11 @@ export default new Router({
             name: 'dashboard',
             component: emDashBoard
         },
+        {
+            path: '/worksplace',
+            name: 'worksplace',
+            component: emWorksplace
+        }, 
         {
             path: '/table',
             name: 'table',
@@ -38,6 +46,16 @@ export default new Router({
             path: '/stand-form',
             name: 'stand-form',
             component: emBaseFrom
+        },
+        {
+            path: '/profile',
+            name: 'profile',
+            component: emProfile
+        },
+        {
+            path: '/map',
+            name: 'map',
+            component: emMap
         }
     ]
 })
