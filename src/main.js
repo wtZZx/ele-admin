@@ -10,8 +10,6 @@ import './assets/index.scss'
 // 引入vue-amap
 import VueAMap from 'vue-amap';
 
-import './mock'
-
 Vue.config.productionTip = false
 
 Vue.use(ElementUI, { size: 'small' })

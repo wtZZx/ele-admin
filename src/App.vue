@@ -61,7 +61,9 @@ export default {
 
 .em-logo {
     height: 100%;
+    // background: url('./assets/image/logo.png');
     background: #50d2d2;
+    background-size: cover;
 }
 
 .em-logo > h2 {
@@ -99,11 +101,11 @@ export default {
 .sidebar-toggle {
     height: 100%;
     box-sizing: border-box;
-    padding: 20px 22px;
+    padding: 14px 22px;
     cursor: pointer;
 
     & > i {
-        font-size: 18px;
+        font-size: 30px;
     }
 }
 </style>

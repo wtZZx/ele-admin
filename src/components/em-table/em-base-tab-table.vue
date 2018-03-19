@@ -9,9 +9,10 @@
         <div class="em-box em-box-primary">
             
             <el-tabs v-model="activeName" @tab-click="handleClick" class="em-tab-table">
-                <el-tab-pane label="评价审核" name="first">评价审核</el-tab-pane>
-                <el-tab-pane label="医院评价" name="second">医院评价</el-tab-pane>
-                <el-tab-pane label="医生投诉" name="third">医生投诉</el-tab-pane>
+                <el-tab-pane label="格兰芬多" name="Gryffindor">格兰芬多</el-tab-pane>
+                <el-tab-pane label="斯莱特林" name="Slytherin">斯莱特林</el-tab-pane>
+                <el-tab-pane label="拉文克劳" name="Ravenclaw">拉文克劳</el-tab-pane>
+                <el-tab-pane label="赫奇帕奇" name="Hufflepuff">赫奇帕奇</el-tab-pane>
             </el-tabs>
         </div>
     </div>

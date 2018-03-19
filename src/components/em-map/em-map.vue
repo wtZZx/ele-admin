@@ -12,7 +12,7 @@ export default {
         return {
             AMapManager,
             zoom: 12,
-            center: [121.59996, 31.197646],
+            center: [131.59996, 31.197646],
             events: {
                 init: (o) => {
                     console.log(o.getCenter())
