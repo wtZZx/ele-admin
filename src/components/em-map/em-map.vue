@@ -40,9 +40,6 @@ export default {
     },
     methods: {
         getMap() {
-            console.log(amapManager._componentMap);
-            // gaode map instance
-            console.log(amapManager._map);
         }
     }
 }

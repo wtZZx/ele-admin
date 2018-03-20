@@ -22,14 +22,15 @@ $service.bindService = function (service, method) {
     }
 }
 
-$service.getMockData = function (url) {
+$service.getMockData = function (url, method = "get") {
     return function() {
         const data = Array.from(arguments)
         return $service.request({
             url: url,
             data: {
                 data: data
-            }
+            },
+            method: method
         })
     }
 }

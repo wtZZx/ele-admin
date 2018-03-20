@@ -73,15 +73,7 @@ export default {
                     restore: {},
                     saveAsImage: {}
                 }
-            },
-            series: [
-                {
-                    name: '魔法预警',
-                    type: 'gauge',
-                    detail: {formatter:'{value}%'},
-                    data: [{value: 50, name: '安全值'}]
-                }
-            ]
+            }
         })
     }
 }

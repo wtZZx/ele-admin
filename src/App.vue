@@ -17,6 +17,35 @@
                             <div class="em-logo">
                             </div>
                         </el-col>
+
+                        <el-col v-bind:span="2" :offset="19">
+                            
+
+                            <el-dropdown>
+                                <div class="avatar">
+                                    <div class="avatar-img">
+                                        <img src="./assets/image/avatar-default.png">
+                                    </div>
+                                    <div class="avatar-name">
+                                        <span>邓布利多</span>
+                                    </div>
+                                </div>
+                                <el-dropdown-menu slot="dropdown">
+                                    <el-dropdown-item>
+                                        <i class="ion-person"></i>
+                                        个人中心
+                                    </el-dropdown-item>
+                                    <el-dropdown-item :divided="true">
+                                        <i class="ion-gear-a"></i>
+                                        设置
+                                    </el-dropdown-item>
+                                    <el-dropdown-item :divided="true">
+                                        <i class="ion-log-out"></i>
+                                        退出登录
+                                    </el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
+                        </el-col>
                     </el-row>
                 </el-header>
 
@@ -106,6 +135,48 @@ export default {
 
     & > i {
         font-size: 30px;
+    }
+}
+
+.avatar {
+    height: 85%;
+    margin: .3rem;
+    padding: .3rem;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    cursor: pointer;
+    color: rgba(94, 96, 235, .8);
+    border-radius: 5px;
+    transition: all .5s;
+
+    &:hover {
+        background: rgba(94, 96, 235, .8);
+        color: #fff;
+    }
+}
+
+.avatar-img {
+    margin: 0 5px;
+
+    & > img {
+        width: 2.5rem;
+        height: 2.5rem;
+        transition: transform .5s;
+
+        &:hover {
+            transform: rotate(-45deg);
+        }
+    }
+
+}
+
+.avatar-name {
+    align-self: center;
+    font-size: 14px;
+
+    & > span {
+        margin: 0 5px;
     }
 }
 </style>

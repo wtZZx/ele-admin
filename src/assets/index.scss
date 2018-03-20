@@ -8,6 +8,14 @@ $default-background-color: #fff;
 $box-padding-default-top-bottom: 10px;
 $box-padding-default-left-right: 30px;
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     height: 100%;
     font-size: 14px;
@@ -140,4 +148,17 @@ a {
 .em-content-collspan {
     margin-left: 54px !important;
     transition: all .5s;
+}
+
+.page-header {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .65);
+    font-weight: 600;
+}
+
+.page-header-text {
+    padding: 0 1rem;
+    margin: 0;
+    font-size: 1rem;
 }

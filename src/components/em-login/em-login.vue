@@ -47,16 +47,17 @@ export default {
     },
     mounted() {
         console.log($server)
-        // $server.logon().then(res => {
-        //     console.log(res)
-        // })
     },
     methods: {
         logon() {
-            console.log('login')
-            // 如果成功登录，路由跳转到首页
-            this.$router.push({
-                path: 'dashboard'
+            $server.login({
+                name: this.login.loginName,
+                password: this.login.password
+            }).then(res => {
+                // 如果成功登录，路由跳转到首页
+                this.$router.push({
+                    path: '/'
+                })
             })
         }
     }

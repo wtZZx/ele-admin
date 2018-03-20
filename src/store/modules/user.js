@@ -1,13 +1,8 @@
 const user = {
     store: {
-        avatarFileId: '',
-        createDt: '',
-        groupId: 0,
+        avatar: '',
         id: '',
-        inited: true,
-        lastModify: '',
         name: '',
-        status: 1,
-        userRoleTokens: []
+        status: 1
     }
 }
