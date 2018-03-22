@@ -4,9 +4,8 @@ export default {
         for (let i = 0; i < ps.length; i++) {
             if (ps[i] === permission) {
                 return true
-            } else {
-                return false
             }
         }
+        return false
     }
 }
