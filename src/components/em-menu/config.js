@@ -70,7 +70,7 @@ const menus = [
             {
                 name: '普通详情页',
                 key: '0401',
-                link: '/profile'
+                link: '/profile/1'
             }
         ]
     },
@@ -87,7 +87,7 @@ const menus = [
         ]
     },
     {
-        name: '页面',
+        name: '页面与权限',
         key: '06',
         icon: 'ion-ios-photos-outline',
         subs: [
@@ -100,6 +100,11 @@ const menus = [
                 name: '403',
                 key: '0602',
                 link: '/403'
+            },
+            {
+                name: '权限测试',
+                key: '0603',
+                link: '/forbidden'
             }
         ]
     },

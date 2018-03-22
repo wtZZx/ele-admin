@@ -1,6 +1,6 @@
 <template>
     <div>
-        403
+        <img src="../../assets/image/forbidden.jpg">
     </div>
 </template>
 
