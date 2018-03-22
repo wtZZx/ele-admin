@@ -11,9 +11,13 @@ import emWorksplace from '@/components/em-worksplace/em-worksplace.vue'
 
 import emMap from '@/components/em-map/em-map.vue'
 
+import emAccessDenied from '@/components/em-access-denied/em-access-denied.vue'
+
+import util from '../utils/util'
+
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
     routes: [
         {
             path: '/',
@@ -48,14 +52,33 @@ export default new Router({
             component: emBaseFrom
         },
         {
-            path: '/profile',
+            path: '/profile/:id',
             name: 'profile',
-            component: emProfile
+            component: emProfile,
+            props: true,
+            meta: {
+                permission: '80'
+            }
         },
         {
             path: '/map',
             name: 'map',
             component: emMap
+        },
+        {
+            path: '/forbidden',
+            name: 'forbidden',
+            component: emAccessDenied
         }
     ]
 })
+
+router.beforeEach((to, from, next) => {
+    if (util.hasPermission(to.meta.permission)) {
+        next()
+    } else if (to.path !== '/forbidden') {
+        next({ path: '/forbidden' })
+    }
+})
+
+export default router

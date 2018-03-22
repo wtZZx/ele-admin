@@ -22,10 +22,6 @@
                         <el-button type="primary" class="em-login-btn" @click="logon">Log in</el-button>
                     </el-form-item>
                 </el-form>
-                    
-                
-
-                
             </div> 
         </div>
     </div>

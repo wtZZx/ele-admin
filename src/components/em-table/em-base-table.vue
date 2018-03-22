@@ -41,12 +41,12 @@
 
             <div class="em-box-body">
                 <el-table :data="students" stripe style="width: 100%">
-                <el-table-column prop="name" label="姓名"></el-table-column>
-                <el-table-column prop="age" label="年龄"></el-table-column>
-                <el-table-column prop="house" label="学院"></el-table-column>
-                <el-table-column prop="blood" label="血统"></el-table-column>
-                <el-table-column prop="enrollment" label="入学日期"></el-table-column>
-            </el-table>
+                    <el-table-column prop="name" label="姓名"></el-table-column>
+                    <el-table-column prop="age" label="年龄"></el-table-column>
+                    <el-table-column prop="house" label="学院"></el-table-column>
+                    <el-table-column prop="blood" label="血统"></el-table-column>
+                    <el-table-column prop="enrollment" label="入学日期"></el-table-column>
+                </el-table>
             </div>
 
             <div class="em-box-controls clearfix">
@@ -91,7 +91,6 @@ export default {
     methods: {
         query() {
             $server.queryList().then(res => {
-                console.log(res)
                 this.students = res.data.students
             })
         },
