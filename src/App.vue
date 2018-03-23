@@ -19,15 +19,13 @@
                         </el-col>
 
                         <el-col v-bind:span="2" :offset="19">
-                            
-
                             <el-dropdown>
                                 <div class="avatar">
                                     <div class="avatar-img">
                                         <img src="./assets/image/avatar-default.png">
                                     </div>
                                     <div class="avatar-name">
-                                        <span>邓布利多</span>
+                                        <span>Dumbledore</span>
                                     </div>
                                 </div>
                                 <el-dropdown-menu slot="dropdown">

@@ -2,23 +2,59 @@
     <div>
         <el-row>
             <el-col :span="6" class="card-wrap">
-                <el-card >
-                    <h3>NEW USER</h3>
+                <el-card>
+                    <el-row>
+                        <el-col :span="12">
+                            <h2>STUDENTS</h2>
+                        </el-col>
+                        <el-col :span="12">
+                            <h2 style="color: #707cd2; text-align: center;">
+                                <i class="ion-person-stalker"></i>
+                                {{ info.stu }}</h2>
+                        </el-col>
+                    </el-row>
                 </el-card>
             </el-col>
             <el-col :span="6" class="card-wrap">
                 <el-card>
-                    <h3>NEW PATIENT</h3>
+                    <el-row>
+                        <el-col :span="12">
+                            <h2>NEW WAND</h2>
+                        </el-col>
+                        <el-col :span="12">
+                            <h2 style="color: #7ace4c; text-align: center;">
+                                <i class="ion-wand"></i>
+                                {{ info.wand }}</h2>
+                        </el-col>
+                    </el-row>
                 </el-card>
             </el-col>
             <el-col :span="6" class="card-wrap">
                 <el-card>
-                    <h3>NEW PROJECT</h3>
+                    <el-row>
+                        <el-col :span="12">
+                            <h2>Azkaban</h2>
+                        </el-col>
+                        <el-col :span="12">
+                            <h2 style="color: #41b3f9; text-align: center;">
+                                <i class="ion-nuclear"></i>
+                                {{ info.Azkaban }}</h2>
+                        </el-col>
+                    </el-row>
                 </el-card>
             </el-col>
             <el-col :span="6" class="card-wrap">
                 <el-card>
-                    <h3>NEW WORK</h3>
+                    <el-row>
+                        <el-col :span="12">
+                            <h2>NEW WORK</h2>
+                        </el-col>
+                        <el-col :span="12">
+                            <h2 style="color: #f33155; text-align: center;">
+                                <i class="ion-coffee"></i>
+                                {{ info.work }}</h2>
+                        </el-col>
+                    </el-row>
                 </el-card>
             </el-col>
         </el-row>
@@ -48,8 +84,6 @@
             </el-col>
         </el-row>
 
-
-
     </div>
 </template>
 
@@ -60,7 +94,13 @@ export default {
     name: 'emDashboard',
     data() {
         return {
-            str: 'DashBoard'
+            str: 'DashBoard',
+            info: {
+                stu: 35597,
+                wand: 988,
+                Azkaban: 5,
+                work: 12
+            }
         }
     },
     mounted() {
@@ -87,6 +127,11 @@ export default {
 #map {
     width: 100%;
     height: 100%;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: center;
 }
 
 #mag {

@@ -21,34 +21,52 @@ const router = new Router({
         {
             path: '/',
             name: 'dashboard',
-            component: emDashBoard
+            component: emDashBoard,
+            meta: {
+                permission: '01'
+            }
         },
         {
             path: '/worksplace',
             name: 'worksplace',
-            component: emWorksplace
+            component: emWorksplace,
+            meta: {
+                permission: '02'
+            }
         },
         {
             path: '/table',
             name: 'table',
             component: emBaseTable,
-            props: (route) => ({ query: route.query.q })
+            props: (route) => ({ query: route.query.q }),
+            meta: {
+                permission: '03'
+            }
         },
         {
             path: '/tab-table',
             name: 'tab-table',
             component: emBaseTabTable,
-            props: (route) => ({ query: route.query.q })
+            props: (route) => ({ query: route.query.q }),
+            meta: {
+                permission: '04'
+            }
         },
         {
             path: '/login',
             name: 'login',
-            component: emLogin
+            component: emLogin,
+            meta: {
+                permission: '05'
+            }
         },
         {
             path: '/stand-form',
             name: 'stand-form',
-            component: emBaseFrom
+            component: emBaseFrom,
+            meta: {
+                permission: '06'
+            }
         },
         {
             path: '/profile/:id',
@@ -56,18 +74,24 @@ const router = new Router({
             component: emProfile,
             props: true,
             meta: {
-                permission: '80'
+                permission: '07'
             }
         },
         {
             path: '/map',
             name: 'map',
-            component: emMap
+            component: emMap,
+            meta: {
+                permission: '08'
+            }
         },
         {
             path: '/forbidden',
             name: 'forbidden',
-            component: emAccessDenied
+            component: emAccessDenied,
+            meta: {
+                permission: '99'
+            }
         }
     ]
 })

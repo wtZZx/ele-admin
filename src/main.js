@@ -10,10 +10,20 @@ import './assets/index.scss'
 // 引入vue-amap
 import VueAMap from 'vue-amap';
 
+import util from './utils/util'
+
 Vue.config.productionTip = false
 
 Vue.use(ElementUI, { size: 'small' })
 Vue.use(VueAMap);
+
+Vue.directive('permission', {
+    inserted(el, binding) {
+        if(!util.hasPermission(binding.expression)) {
+            el.remove()
+        }
+    }
+})
 
 // 初始化vue-amap
 VueAMap.initAMapApiLoader({
