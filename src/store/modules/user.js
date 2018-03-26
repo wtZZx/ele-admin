@@ -1,8 +1,32 @@
 const user = {
-    store: {
+    state: {
         avatar: '',
         id: '',
         name: '',
-        status: 1
+        status: 1,
+        roles: [],
+        permission: []
+    },
+    mutations: {
+        setAvatar(state, avatar) {
+            state.avatar = avatar
+        },
+        setName(state, name) {
+            state.name = name
+        },
+        setStatus(state, status) {
+            state.status = status
+        },
+        setRoles(state, roles) {
+            state.roles = roles
+        },
+        setPermission(state, permission) {
+            state.permission = permission
+        }
+    },
+    actions: {
+
     }
 }
+
+export default user
