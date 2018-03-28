@@ -44,10 +44,10 @@ const router = new Router({
             }
         },
         {
-            path: '/tab-table',
+            path: '/tab-table/:id',
             name: 'tab-table',
             component: emBaseTabTable,
-            props: (route) => ({ query: route.query.q }),
+            props: true,
             meta: {
                 permission: '04'
             }

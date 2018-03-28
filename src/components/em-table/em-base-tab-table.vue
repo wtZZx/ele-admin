@@ -7,8 +7,8 @@
             </el-breadcrumb>
         </div>
         <div class="em-box em-box-primary">    
-            <el-tabs v-model="activeName" @tab-click="handleClick" class="em-tab-table">
-                <el-tab-pane label="格兰芬多" name="Gryffindor">
+            <el-tabs :value="activeName" @tab-click="switchTab" class="em-tab-table">
+                <el-tab-pane label="格兰芬多" name="1" >
                     <div class="em-box-controls with-border">
                         <el-form ref="form" :model="queryArg" :inline="true">
                             <el-form-item>
@@ -28,7 +28,7 @@
                         </el-form>
                     </div>
                 </el-tab-pane>
-                <el-tab-pane label="斯莱特林" name="Slytherin">
+                <el-tab-pane label="斯莱特林" name="2">
                     <div class="em-box-controls with-border">
                         <el-form ref="form" :inline="true">
                             <el-form-item>
@@ -37,10 +37,10 @@
                         </el-form>
                     </div>
                 </el-tab-pane>
-                <el-tab-pane label="拉文克劳" name="Ravenclaw">
+                <el-tab-pane label="拉文克劳" name="3">
                     
                 </el-tab-pane>
-                <el-tab-pane label="赫奇帕奇" name="Hufflepuff">
+                <el-tab-pane label="赫奇帕奇" name="4">
                     
                 </el-tab-pane>
             </el-tabs>
@@ -52,17 +52,17 @@ export default {
     name: 'emBaseTabTable',
     data() {
         return {
-            activeName: "second",
+            activeName: this.id,
             queryArg: {
                 name: '',
                 mobile: ''
             }
         };
     },
-    
+    props: ['id'],
     methods: {
-        handleClick(tab, event) {
-            console.log(tab, event);
+        switchTab(tab, event) {
+            this.$router.push({ name: 'tab-table', params: { id: tab.name }})
         },
         query() {
 

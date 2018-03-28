@@ -62,6 +62,7 @@
 
 <script>
 import emMenu from "./components/em-menu/em-menu.vue";
+import store from './store/getters'
 
 export default {
     name: "App",

@@ -5,7 +5,7 @@ const user = {
         name: '',
         status: 1,
         roles: [],
-        permission: []
+        permission: ['01', '02', '03', '04', '05', '06', '07', '08', '80.99']
     },
     mutations: {
         setAvatar(state, avatar) {

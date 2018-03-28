@@ -29,7 +29,7 @@ const menus = [
             {
                 name: '标签页列表',
                 key: '0102',
-                link: 'tab-table'
+                link: '/tab-table/1'
             }
         ]
     },
